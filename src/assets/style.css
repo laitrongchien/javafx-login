@@ -1,0 +1,25 @@
+.login-right-bg {
+    -fx-background-color: linear-gradient(to bottom right, #6a9ae7, #426fb1);
+}
+
+.button-desisgn:hover {
+    -fx-background-color: #426fb1;
+    -fx-cursor: hand;
+    -fx-text-fill: #ffffff;
+}
+
+.hypertext {
+    -fx-text-fill: #ffffff;
+    -fx-border-color: none;
+    -fx-border-width: 0px;
+}
+
+.exit {
+    -fx-background-color: #e05a61;
+    -fx-cursor: hand;
+    -fx-background-radius: 50px;
+}
+
+.exit:hover {
+    -fx-opacity: 0.8;
+}

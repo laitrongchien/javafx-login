@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="800.0">
+         <children>
+            <AnchorPane layoutX="400.0" prefHeight="500.0" prefWidth="400.0" styleClass="login-right-bg" stylesheets="@../assets/style.css">
+               <children>
+                  <Label alignment="CENTER" layoutX="90.0" layoutY="49.0" prefHeight="75.0" prefWidth="249.0" text="User Register " textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="36.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="su_name" layoutX="104.0" layoutY="131.0" prefHeight="40.0" prefWidth="220.0" promptText="Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="su_password" layoutX="105.0" layoutY="344.0" prefHeight="40.0" prefWidth="220.0" promptText="Password ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <Button fx:id="signup_btn" layoutX="163.0" layoutY="402.0" mnemonicParsing="false" onAction="#signup" prefHeight="40.0" prefWidth="96.0" styleClass="button-desisgn" stylesheets="@../assets/style.css" text="Sign up">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Hyperlink layoutX="148.0" layoutY="462.0" onAction="#switchLogin" styleClass="hypertext" stylesheets="@../assets/style.css" text="Login your account">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Button layoutX="367.0" layoutY="7.0" mnemonicParsing="false" onAction="#exit" prefHeight="24.0" prefWidth="24.0" styleClass="exit" stylesheets="@../assets/style.css" text="x" />
+                  <TextField fx:id="su_phone" layoutX="104.0" layoutY="236.0" prefHeight="40.0" prefWidth="220.0" promptText="Phone">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="su_username" layoutX="104.0" layoutY="288.0" prefHeight="40.0" prefWidth="220.0" promptText="Username">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="su_email" layoutX="104.0" layoutY="185.0" prefHeight="40.0" prefWidth="220.0" promptText="Email">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="7.0" prefHeight="500.0" prefWidth="400.0" stylesheets="@../assets/style.css">
+               <children>
+                  <Label alignment="CENTER" layoutX="79.0" layoutY="208.0" prefHeight="85.0" prefWidth="242.0" text="Laivre Coffee Shop ">
+                     <font>
+                        <Font name="Cambria" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
