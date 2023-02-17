@@ -70,7 +70,7 @@ public class SignupController implements Initializable {
     private boolean isAlreadyRegistered() {
         boolean usernameExist = false;
 
-        String query = "select * from users WHERE user_name = ?";
+        String query = "select * from users WHERE username = ?";
         try {
             statement = connect.prepareStatement(query);
             statement.setString(1, su_username.getText());
